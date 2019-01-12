@@ -1,0 +1,94 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* zerujemy odstępy */
+	vertical-align: baseline;          /* wszystko do jednej bazowej linii */
+	background: transparent;      /* blokowanie domyślnych backgraundów*/
+	font-size: 100%;                     /* jednakowy rozmiar ściąnki*/
+}
+a {                                      	    
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* kasujemy odstępy pomiędzy kratkami tablicy */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* wertykalne wyrównanie */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* kasujemy defaultowe odstępy dla elementów form (checkbox i radio) */
+	font-size: 100%; 			 /* jednakowy rozmiar ściąnki*/
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* kasujemy wewnętrzne odstępy dla pól tekstowych */
+}
+input[type="checkbox"] { 		/* kasujemy defaultowe odstępy dla elementów form (checkbox i radio) */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- ustawienia główne---------*/
+html {
+	min-height:100%; /* zawsze pokazywać skrol*/
+}
+body {
+    color: #606060;
+	text-align: left;
+	font-size: 1em; /* wykorzystujmey biezpieczne CSS steki */
+    min-height:100%;
+    font-family: 'Open Sans', sans-serif;
+}
+a, a:visited {  
+	color: #e6618c;
+	text-decoration: underline;
+}
+a:hover {
+	color: #fdf208;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #c83867;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /ustawienia główne---------*/
